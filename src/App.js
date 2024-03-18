@@ -20,7 +20,7 @@ function App() {
     } else {
       try {
         const calculatedResult = eval(input);
-        if (calculatedResult === Infinity || isNaN(calculatedResult)) {
+        if (isNaN(calculatedResult)) {
           setResult("NaN");
         } else {
           setResult(calculatedResult);
